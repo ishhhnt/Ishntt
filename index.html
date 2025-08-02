@@ -4,14 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ISHNTT Website</title>
-<!-- Google Analytics for ISHNTT Website -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HWH8YME2WL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-20SNPSWFKF');
-</script>
+
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
@@ -29,14 +22,12 @@
       color: #000;
     }
 
-    /* Nav */
     nav {
       position: fixed;
       top: 20px;
       right: 20px;
       z-index: 1000;
     }
-
     #menuToggle {
       background: none;
       border: none;
@@ -44,7 +35,6 @@
       cursor: pointer;
       color: inherit;
     }
-
     #menuOptions {
       display: none;
       flex-direction: column;
@@ -54,7 +44,6 @@
       padding: 10px;
       border-radius: 12px;
     }
-
     #menuOptions button {
       font-size: 0.9rem;
       background: rgba(255,255,255,0.05);
@@ -65,17 +54,14 @@
       margin-bottom: 8px;
       cursor: pointer;
     }
-
     #menuOptions button:hover {
       background: rgba(255,255,255,0.15);
     }
 
-    /* Sections */
     .section {
       display: none;
       padding: 80px 20px 40px;
     }
-
     .active {
       display: block;
     }
@@ -85,12 +71,10 @@
       color: #fff;
       margin-bottom: 20px;
     }
-
     body.light-mode h1 {
       color: #000;
     }
 
-    /* Home Card */
     .home-card {
       max-width: 320px;
       margin: 30px auto;
@@ -109,7 +93,6 @@
       border-radius: 12px;
       height: 200px;
     }
-
     .slider img {
       position: absolute;
       width: 100%;
@@ -120,7 +103,6 @@
       opacity: 0;
       transition: opacity 0.6s ease;
     }
-
     .slider img.active {
       opacity: 1;
       position: relative;
@@ -143,7 +125,6 @@
       box-shadow: 10px 10px 30px #00000066, -10px -10px 30px #ffffff33;
       transition: transform 0.3s, box-shadow 0.3s;
     }
-
     .card:hover {
       transform: scale(1.05);
       box-shadow: 5px 5px 20px #000, -5px -5px 20px #fff2;
@@ -159,12 +140,10 @@
       text-align: center;
       margin-top: 50px;
     }
-
     .contact-info p {
       font-size: 1rem;
       margin-bottom: 12px;
     }
-
     .contact-info a {
       color: #00f;
       text-decoration: none;
@@ -183,7 +162,6 @@
       flex-direction: column;
       z-index: 999;
     }
-
     .modal img {
       max-width: 90%;
       max-height: 70vh;
@@ -191,7 +169,6 @@
       margin-bottom: 20px;
       border: 2px solid white;
     }
-
     .modal button {
       padding: 10px 20px;
       border-radius: 8px;
@@ -217,6 +194,7 @@
       <button onclick="showSection('home')">HOME</button>
       <button onclick="showSection('profile')">PROFILE</button>
       <button onclick="showSection('contact')">CONTACT</button>
+      <button onclick="showSection('wallpapers')">🖼️ All Wallpapers</button>
       <button onclick="toggleMode()">🌙 Toggle Mode</button>
     </div>
   </nav>
@@ -228,8 +206,8 @@
     <p style="text-align:center;">OUR PARTNERS:- 🐐GOTIYA 🦆BATAK 🐇KHARGOS</p>
     <div class="home-card">
       <div class="slider" id="homeSlider">
-        <img src="https://i.ibb.co/3m0CrwSG/53515debf7d21e339600f4bed4213512.jpg" alt="slide1" />
-        <img src="https://i.ibb.co/6cyMBMYn/2d6e0349c903054cd46df638a172d4b8.jpg" alt="slide2" />
+        <img src="img/1.jpg" alt="slide1" />
+        <img src="img/2.jpg" alt="slide2" />
       </div>
       <p>ISHNTTTT </p>
     </div>
@@ -239,20 +217,18 @@
   <div id="profile" class="section">
     <h1>GALLERY</h1>
     <div class="gallery">
-      <div class="card"><img src="https://i.ibb.co/6cyMBMYn/2d6e0349c903054cd46df638a172d4b8.jpg" alt=""></div>
-      <div class="card"><img src="https://i.ibb.co/KYvgbnm/a1b6382df31b01e04742d8a48183afba.jpg" alt=""></div>
-      <div class="card"><img src="https://i.ibb.co/BK3NSDVf/gojo-satoru.gif" alt=""></div>
-      <div class="card"><img src="https://i.ibb.co/pBDS4Gcd/35d474753df6a5fa03db5fd5d47a0d48.jpg" alt=""></div>
-      <div class="card"><img src="https://i.ibb.co/vCrxPFDS/8d90a738cdf967530dbb7747335e182d.jpg" alt=""></div>
-      <div class="card"><img src="https://i.ibb.co/bjMkNQ6R/816b9ed194b48f01be52e9de8599351f.jpg" alt=""></div>
-      <div class="card"><img src="https://i.ibb.co/SwW7SC8d/d469498d11bed69e289d8dacc8b7eae9.jpg" alt=""></div>
-      <div class="card"><img src="https://i.ibb.co/6RJLv1rP/d82f062b907f5dcb15cdbfa4f8ae9b12.jpg" alt=""></div>
-      <div class="card"><img src="https://i.ibb.co/h1hbFttc/85f361f859cd06b55e5d14fe09e4b9f8.jpg" alt=""></div>
-      <div class="card"><img src="https://i.ibb.co/cSxL9S8X/65dafb49fed4ff91da4f32dfa8a6db7c.jpg" alt=""></div>
-      <div class="card"><img src="https://i.ibb.co/Q3dzDFXY/f6361d38d542fbeaae7f66fc249624b9.jpg" alt=""></div>
-      <div class="card"><img src="https://i.ibb.co/Kz8ynm3f/c4d8bd2bc75d17c9bec2edf92c7aa8e8.jpg" alt=""></div>
-      <div class="card"><img src="https://i.ibb.co/20L9BysD/65d33aa0ebb09111f6749538966671ff.jpg" alt=""></div>
-      <div class="card"><img src="https://i.ibb.co/HfhNkXmv/96b866c64984c3501728b43a1b20a98b.jpg" alt=""></div>
+      <div class="card"><img src="img/3.jpg" alt=""></div>
+      <div class="card"><img src="img/4.jpg" alt=""></div>
+      <div class="card"><img src="img/5.jpg" alt=""></div>
+      <div class="card"><img src="img/6.jpg" alt=""></div>
+      <div class="card"><img src="img/7.jpg" alt=""></div>
+      <div class="card"><img src="img/8.jpg" alt=""></div>
+      <div class="card"><img src="img/9.jpg" alt=""></div>
+      <div class="card"><img src="img/10.jpg" alt=""></div>
+      <div class="card"><img src="img/11.jpg" alt=""></div>
+      <div class="card"><img src="img/12.jpg" alt=""></div>
+      <div class="card"><img src="img/13.jpg" alt=""></div>
+      <div class="card"><img src="img/14.jpg" alt=""></div>
     </div>
   </div>
 
@@ -265,6 +241,12 @@
     </div>
   </div>
 
+  <!-- Wallpapers Section -->
+  <div id="wallpapers" class="section">
+    <h1>ALL WALLPAPERS</h1>
+    <div class="gallery" id="wallpaperGallery"></div>
+  </div>
+
   <!-- Modal -->
   <div class="modal" id="modal">
     <img id="modal-img" src="" alt="">
@@ -272,64 +254,64 @@
   </div>
 
   <script>
-    // Section toggle
     function showSection(id) {
       document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
       document.getElementById(id).classList.add('active');
       document.getElementById('menuOptions').style.display = 'none';
     }
 
-    // Modal
     const modal = document.getElementById('modal');
     const modalImg = document.getElementById('modal-img');
     const downloadLink = document.getElementById('download-link');
 
-    document.querySelectorAll('.card img').forEach(img => {
-      img.addEventListener('click', () => {
+    document.addEventListener("click", e => {
+      if (e.target.tagName === "IMG" && e.target.closest(".card")) {
         modal.style.display = 'flex';
-        modalImg.src = img.src;
-        downloadLink.href = img.src;
-      });
-    });
-
-    modal.addEventListener('click', (e) => {
+        modalImg.src = e.target.src;
+        downloadLink.href = e.target.src;
+      }
       if (e.target === modal || e.target === modalImg) {
         modal.style.display = 'none';
       }
     });
 
-    // Menu toggle
     document.getElementById('menuToggle').addEventListener('click', () => {
       const menu = document.getElementById('menuOptions');
       menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
     });
 
-    // Dark/Light mode toggle
     function toggleMode() {
       const isLight = document.body.classList.toggle('light-mode');
       localStorage.setItem('mode', isLight ? 'light' : 'dark');
     }
-
     if (localStorage.getItem('mode') === 'light') {
       document.body.classList.add('light-mode');
     }
 
-    // Home image slider
     const sliderImgs = document.querySelectorAll('#homeSlider img');
     let currentSlide = 0;
-
     function showSlide(index) {
-      sliderImgs.forEach((img, i) => {
-        img.classList.toggle('active', i === index);
-      });
+      sliderImgs.forEach((img, i) => img.classList.toggle('active', i === index));
     }
-
     setInterval(() => {
       currentSlide = (currentSlide + 1) % sliderImgs.length;
       showSlide(currentSlide);
     }, 3000);
-
     showSlide(0);
+
+    // Dynamic wallpapers
+    const wallpaperGallery = document.getElementById('wallpaperGallery');
+    const totalImages = 27; // Only change this number when adding more images
+
+    for (let i = 1; i <= totalImages; i++) {
+      const card = document.createElement("div");
+      card.className = "card";
+      const img = document.createElement("img");
+      img.src = `img/${i}.jpg`;
+      img.alt = `Wallpaper ${i}`;
+      card.appendChild(img);
+      wallpaperGallery.appendChild(card);
+    }
   </script>
 </body>
 </html>
